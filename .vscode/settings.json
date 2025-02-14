@@ -1,0 +1,26 @@
+{
+  //// Editor
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  //// Mypy
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.args": [
+    "--config-file",
+    "pyproject.toml"
+  ],
+  //// Ruff
+  "ruff.importStrategy": "fromEnvironment",
+  "ruff.format.args": [
+    "--config",
+    "pyproject.toml"
+  ],
+  "ruff.lint.args": [
+    "--config",
+    "pyproject.toml"
+  ],
+  //// Tests
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

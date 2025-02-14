@@ -1,0 +1,23 @@
+[project]
+name = "Keeper-API"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aioboto3>=13.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "fastapi[standard]>=0.115.8",
+    "mypy>=1.15.0",
+    "ruff>=0.9.6",
+]
+
+
+[tool.mypy]
+strict = true
+mypy_path = ["src"]
+explicit_package_bases = true
+files = ["src", "tests"]
